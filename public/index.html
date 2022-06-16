@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TTRPG Database</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+
+	<body id="main">
+
+		<h1>Spider's TTRPG Database</h1>
+
+		<div id="verification" class="hidden">
+			<p>Message!</p>
+		</div>
+
+		<div id="window">
+			<div id="filter">
+				<div id="filter_header">
+					<p style="display:inline-block;">Filter by:</p>
+					<form style="display:inline-block;">
+						<label for="tone">Tone</label>
+						<select id="tone" name="tone">
+							<option value="blank"> </option>
+							<option value="serious">Serious</option>
+							<option value="comedic">Comedic</option>
+						</select>
+						<label for="style">Style</label>
+						<select id="style" name="style">
+							<option value="blank"> </option>
+							<option value="trad">Traditional</option>
+							<option value="letter">Letter Writing</option>
+							<option value="world">World Building</option>
+						</select>
+						<!-- Add more as needed, subject should probably be split better but you get the idea -->
+						<label for="subject">Subject</label> 
+						<select id="subject" name="subject">
+							<option value="blank"> </option>
+							<option value="vamps">Vampires</option>
+							<option value="heroes">Heroes</option>
+							<option value="monsters">Monsters</option>
+							<option value="modern">Modern</option>
+						</select>
+					</form>
+				</div>
+
+				<div id="filtered_games">
+					
+				</div>
+			</div>
+
+			<div id="sort" class="hidden">
+				<table id="sort_table">
+					<tr>
+					  <th>Title</th>
+					  <th>Tone</th>
+					  <th>Style</th>
+					  <th>Subject</th>
+					</tr>
+				  </table>
+			</div>
+
+			<div id="add" class="hidden">
+				<form id="add_form">
+					<label for="title">Game title:</label>
+					<input type="text" id="title" name="title"><br><br>
+			
+					<input type="submit" disabled = "true" id="btnSubmit" value="SUBMIT" />
+			  	</form>
+			</div>
+
+			<div id="toggle_buttons">
+				<button id="sort_btn">SORT</button>
+				<button id="filter_btn">FILTER</button>
+				<button id="add_btn">ADD</button>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="js-code.js" ></script>
+</html>
