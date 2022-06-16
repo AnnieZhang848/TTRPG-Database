@@ -1,0 +1,115 @@
+
+/* @import url('https://fonts.googleapis.com/css?family=Chela One&display=swap'); */
+
+body{
+    background-color: beige;
+}
+
+.hidden{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2em;
+}
+
+p, label{
+    font-size: 20px;
+}
+
+#window{
+    width: max-content;
+    background-color: rgb(255, 219, 198);
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#verification{
+    width: max-content;
+    border: 2px solid black;
+    margin: auto;
+    background-color: rgb(162, 255, 162);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #003b4b;
+}
+
+#filter_header{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid black;
+}
+
+#filtered_games{
+    max-height: 500px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+.game_block{
+    padding-left: 10px;
+    border-bottom: 2px solid black;
+    margin-top: 0px;
+    padding-top: 3px;
+}
+
+#sort{
+    border-bottom: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: 0px;
+    width: 100%;
+    font-size: 20px;
+}
+
+table td, table th {
+    border: 1px solid black;
+}
+
+td {
+    padding-left: 10px;
+}
+
+.sort_row:hover{
+    background: white;
+    cursor: pointer;
+}
+
+#toggle_buttons{
+    text-align: center;
+    padding: 20px;
+}
+
+#sort_btn, #filter_btn, #add_btn, #btnSubmit{
+    border: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: lightgrey;
+    color: #003b4b;
+    width: 10em;
+    height: 2.9em;
+    border-radius: 10px;
+}
+#sort_btn:hover, #filter_btn:hover, .game_block:hover, #add_btn:hover, #btnSubmit:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+#btnSubmit:disabled{
+    background-color: grey;
+    color: white;
+    cursor: default;
+}
+
+#add_form{
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+}
